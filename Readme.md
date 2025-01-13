@@ -2,9 +2,9 @@
 - Since I am using the version, I have access to only 11,000 API calls monthly.
 - This is why, I have tested this pipeline for 7 days and restricted the analysis for only 14 cryptos.
 
-**Storage** -  Google Drive
-**Notebook** - Google Colab
-**Compute Engine** - Python 3 Google Compute Engine
+- **Storage** -  Google Drive
+- **Notebook** - Google Colab
+- **Compute Engine** - Python 3 Google Compute Engine
 
 - Tables information:
   1. 1 Fact Table - Information on all fact data
