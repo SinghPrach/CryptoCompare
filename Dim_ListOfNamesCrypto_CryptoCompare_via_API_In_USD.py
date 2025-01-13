@@ -57,9 +57,11 @@ dim_names_crypto_df['Year'] = pd.to_datetime(dim_names_crypto_df['Date']).dt.yea
 dim_names_crypto_df['Month_Name'] = pd.to_datetime(dim_names_crypto_df['Date']).dt.month_name()
 
 current_month_name = datetime.now().strftime('%B')
+current_year = datetime.now().year
+curr_month_year = current_month_name + str(current_year)
 
 # Define the path where the file will be saved
-drive_folder = '/content/drive/My Drive/colab_container/crypto_data/Dim/NamesSymbolCrypto/'+current_month_name
+drive_folder = '/content/drive/My Drive/colab_container/crypto_data/Dim/NamesSymbolCrypto/'+curr_month_year
 
 # Create the folder if it doesn't exist
 os.makedirs(drive_folder, exist_ok=True)
