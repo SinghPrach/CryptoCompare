@@ -56,8 +56,10 @@ dim_names_crypto_df['Month'] = pd.to_datetime(dim_names_crypto_df['Date']).dt.mo
 dim_names_crypto_df['Year'] = pd.to_datetime(dim_names_crypto_df['Date']).dt.year
 dim_names_crypto_df['Month_Name'] = pd.to_datetime(dim_names_crypto_df['Date']).dt.month_name()
 
+current_month_name = datetime.now().strftime('%B')
+
 # Define the path where the file will be saved
-drive_folder = '/content/drive/My Drive/colab_container/crypto_data/Dim/NamesSymbolCrypto/'
+drive_folder = '/content/drive/My Drive/colab_container/crypto_data/Dim/NamesSymbolCrypto/'+current_month_name
 
 # Create the folder if it doesn't exist
 os.makedirs(drive_folder, exist_ok=True)
@@ -72,7 +74,7 @@ dim_names_crypto_df.to_parquet(parquet_file_path, engine='pyarrow')
 print(f"File saved to: {parquet_file_path}")
 
 # Reading the data we just wrote
-parquet_file_path = '/content/drive/My Drive/colab_container/crypto_data/Dim/NamesSymbolCrypto/crypto_data.parquet'
+parquet_file_path = drive_folder+'crypto_data.parquet'
 
 # Read the Parquet file into a DataFrame
 df = pd.read_parquet(parquet_file_path, engine='pyarrow')
