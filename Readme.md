@@ -14,4 +14,4 @@
   2. 2 Dimension Tables - Information on crypto symbols and names to map the names of crypto to Fact data using symbols as joining keys and the top 50 coins based on TotalCoinsMined parameter.
   3. 1 Aggregated Table - Obtained after joining the Dimension and Fact tables, and then aggregating.
 - Usual time of run - 11:00 AM
-- Dates of run - 13th Jan 2025, 14th Jan 2025, 15th Jan 2025, 16th Jan 2025, 20th Jan 2025, 21st Jan 2025 [Gap in run days' continuity due to personal reasons]
+- Dates of run - 13th Jan 2025, 15th Jan 2025, 16th Jan 2025, 20th Jan 2025, 21st Jan 2025 [Gap in run days' continuity due to personal reasons]
