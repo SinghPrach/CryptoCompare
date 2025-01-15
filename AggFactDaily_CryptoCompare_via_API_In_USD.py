@@ -69,7 +69,7 @@ df_dailyFact_serialNo = df_dailyFact_columnsRenamed.withColumn('SNo', row_number
 
 df_dailyFact_Timestamp = df_dailyFact_serialNo.withColumn('CurrentTimestamp', current_timestamp())
 
-df_dailyFact_final = df_dailyFact_Timestamp.select('SNo','Crypto','Crypto_Name','Currency','Market_Cap','TotalCoinsMined','Day','Month','Year')
+df_dailyFact_final = df_dailyFact_Timestamp.select('SNo','Crypto','Crypto_Name','Currency','Market_Cap','TotalCoinsMined','Day','Month','Year','CurrentTimestamp')
 
 path_dailyFact = '/content/drive/My Drive/mycolab_container/Fact/USD_DailyFact/'
 
