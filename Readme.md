@@ -15,3 +15,6 @@
   3. 1 Aggregated Table - Obtained after joining the Dimension and Fact tables, and then aggregating.
 - Usual time of run - 11:00 AM
 - Dates of run - 13th Jan 2025, 15th Jan 2025, 16th Jan 2025, 20th Jan 2025, 21st Jan 2025 [Gap in run days' continuity due to personal reasons]
+
+![image](https://github.com/user-attachments/assets/c724536a-3107-497e-80cc-17b830273e0d)
+
