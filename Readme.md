@@ -20,6 +20,7 @@
 ![image](https://github.com/user-attachments/assets/c724536a-3107-497e-80cc-17b830273e0d)
 
 - Run Flow:
+- Call the notebook "**ExecutePipeline.py** directly, it will automate running all the notebooks in the required sequence.
 <img width="1415" alt="Screenshot 2025-01-16 at 11 44 25" src="https://github.com/user-attachments/assets/a3dd6638-a8ad-4cde-a4bd-0deb3b8cdcb2" />
 
 Notebooks' run order:
