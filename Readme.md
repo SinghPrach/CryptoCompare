@@ -21,3 +21,10 @@
 
 - Run Flow:
 <img width="1415" alt="Screenshot 2025-01-16 at 11 44 25" src="https://github.com/user-attachments/assets/a3dd6638-a8ad-4cde-a4bd-0deb3b8cdcb2" />
+
+Notebooks' run order:
+1. Dim1_ListOfNamesCrypto_CryptoCompare_via_API_In_USD.py (Monthly once, 1st of every month)
+2. Dim2_Top50Coins_CryptoCompare_via_API_In_USD.py (Daily)
+3. Fact_CryptoCompare_via_API_In_USD.py (Daily)
+4. AggFactDaily_CryptoCompare_via_API_In_USD.py (Daily)
+5. AggHistoricalData_CryptoCompare_via_API_In_USD.py (Daily)
